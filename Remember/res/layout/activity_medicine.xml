@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mediTxtName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal" >
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textSize="18sp"
+        android:text="Alarm Date :"
+        />
+    <TextView 
+        android:id="@+id/mediTvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="June,06,2014"
+        />
+     
+    <ImageButton
+        android:id="@+id/mediBtnSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_date"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+         <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+         android:textSize="18sp"
+        android:text="Alarm Time 1"
+        />
+        
+        <TextView 
+        android:id="@+id/mediTvTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="09:30 AM"
+        />
+      <ImageButton
+        android:id="@+id/mediBtnSelectTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_time"/>
+        
+     
+        
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+         <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+         android:textSize="18sp"
+        android:text="Alarm Time 2"
+        />
+        
+        <TextView 
+        android:id="@+id/mediTvTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="09:30 AM"
+        />
+      <ImageButton
+        android:id="@+id/mediBtnSelectTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_time"/>
+        
+        <ToggleButton
+            android:id="@+id/toggle2"
+           android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+             android:checked="false"
+            android:text="ToggleButton" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+         <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+         android:textSize="18sp"
+        android:text="Alarm Time 3"
+        />
+        
+        <TextView 
+        android:id="@+id/mediTvTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="09:30 AM"
+        />
+      <ImageButton
+        android:id="@+id/mediBtnSelectTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_time"/>
+        
+        <ToggleButton
+            android:id="@+id/toggle3"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+             android:checked="false"
+            android:text="ToggleButton" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+      <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp" />
+
+      <Spinner
+          android:id="@+id/mediSpRepeat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:entries="@array/repeat_options"
+          android:layout_weight="1" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/mediBtnSave"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Set" />
+    </LinearLayout>
+
+     </LinearLayout>
+ </ScrollView>
+    
+</LinearLayout>

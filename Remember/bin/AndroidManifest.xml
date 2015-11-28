@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.remember"
+    android:versionCode="1"
+    android:versionName="1.0"
+     >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17"
+         />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+         <activity
+            android:name="com.project.remember.SpleshScreen"
+            android:screenOrientation="portrait"
+             >   
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+            
+        <activity
+            android:name="com.project.remember.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Birthday"
+            android:label="Birthday" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.BIRTHDAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Medicine"
+            android:label="Medicine" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDICINE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Meeting"
+            android:screenOrientation="portrait"
+            android:label="Meeting" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEETING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Task"
+            android:screenOrientation="portrait"
+            android:label="Task" >
+            <intent-filter>
+                <action android:name="android.intent.action.TASK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Anniversary"
+            android:screenOrientation="portrait"
+            android:label="Anniversary" >
+            <intent-filter>
+                <action android:name="android.intent.action.ANNIVERSARY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Events"
+            android:screenOrientation="portrait"
+            android:label="Upcomming Events" >
+            <intent-filter>
+                <action android:name="android.intent.action.EVENTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.remember.Notify"
+            android:screenOrientation="portrait"
+            android:label="NOTIFY"
+            android:theme="@android:style/Theme.Dialog">        
+            </activity>
+            
+         <activity
+            android:name="com.project.remember.Feedback"
+            android:screenOrientation="portrait"
+            android:label="Feedback" >   
+            </activity>
+
+         <activity
+            android:name="com.project.remember.AboutUs"
+            android:screenOrientation="portrait"
+            android:label="About Us" >   
+            </activity>
+            
+         
+         
+          <activity
+            android:name="com.project.remember.FacebookPage"
+            android:screenOrientation="portrait"
+            android:label="Facebook Page" >   
+            
+            </activity>
+        <activity
+            android:name="com.project.remember.Settings"
+            android:screenOrientation="portrait"
+            android:label="Settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.Settings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+
+        <receiver android:name="com.project.remember.AlarmReceiver" >
+        </receiver>
+        <receiver
+            android:name="com.project.remember.RebootReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+          <service android:name="com.project.remember.AlarmService" />
+    </application>
+</manifest>

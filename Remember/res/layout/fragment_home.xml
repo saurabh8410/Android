@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:id="@+id/layout_home"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".HomeFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <ImageButton
+            android:id="@+id/btnBirth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_birthday"
+            android:clickable="true"
+            android:contentDescription="@+string/AssassionCreed"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_weight="20"
+        android:weightSum="100" >
+
+        <ImageButton
+            android:id="@+id/btnAni"
+            style="@style/AppTheme"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_anni"
+            android:contentDescription="@+string/AssassionCreed"
+            android:focusable="true" />
+
+        <ImageButton
+            android:id="@+id/btnMeeting"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_meeting"
+            android:contentDescription="@+string/AssassionCreed"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_weight="20"
+        android:weightSum="100" >
+
+        <ImageButton
+            android:id="@+id/btnMedicine"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_medicine"
+            android:contentDescription="@+string/AssassionCreed"
+            android:focusable="true" />
+
+        <ImageButton
+            android:id="@+id/btnTask"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="50"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_task"
+            android:contentDescription="@+string/AssassionCreed"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_weight="20" >
+
+        <ImageButton
+            android:id="@+id/btnEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_all"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:contentDescription="@+string/AssassionCreed"
+            android:focusable="true"
+            android:soundEffectsEnabled="true" />
+    </LinearLayout>
+
+</LinearLayout>
